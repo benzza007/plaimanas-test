@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLAIMANAS</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 left-0 w-full z-50">
+    <div class="text-[13px] uppercase">
+
+      <!-- Top Row -->
+      <div class="relative grid grid-cols-3 items-center h-16 bg-white px-6 z-10">
+
+        <!-- Left Menu -->
+        <div class="flex items-center">
+          <select class="select bg-transparent outline-none cursor-pointer">
+            <option>TH - THB</option>
+            <option>US - USD</option>
+          </select>
+        </div>
+
+        <!-- Center Menu -->
+        <div class="flex justify-center items-center transition duration-300 ease-in-out">
+
+          <!-- Desktop Menu -->
+          <nav class="hidden lg:flex items-center h-16 gap-8 transition duration-300 ease-in-out">
+            <a href="#" class="block hover:opacity-60 hover:scale-[1.5]  hover:font-bold transition duration-300 ease-in-out">Women</a>
+            <a href="#" class="block hover:opacity-60 hover:scale-[1.5]  hover:font-bold transition duration-300 ease-in-out">Collections</a>
+            <div class="hover:scale-[1.5]  hover:font-bold transition duration-300 ease-in-out group cursor-pointer">
+              Editorial
+              <div class="sub-menu-container fixed top-0 left-0 bg-black opacity-0 w-screen z-[-5] h-screen invisible group-hover:opacity-100 group-hover:z-50 group-hover:visible transition duration-300 ease-in-out">
+                <div class="sub-menu flex justify-center text-white p-10">
+                  <div>
+                    <div class="text-lg uppercase font-bold">editorial</div>
+                    <div class="grid grid-cols-1 mt-4 uppercase">
+                      <a href="#" class="p-[10px] w-full h-10 text-[13px] hover:scale-[1.1] hover:font-medium transition duration-300 ease-in-out">A.S.C</a>
+                      <a href="#" class="p-[10px] w-full h-10 text-[13px] hover:scale-[1.1] hover:font-medium transition duration-300 ease-in-out">bazaar</a>
+                      <a href="#" class="p-[10px] w-full h-10 text-[13px] hover:scale-[1.1] hover:font-medium transition duration-300 ease-in-out">ELLE</a>
+                      <a href="#" class="p-[10px] w-full h-10 text-[13px] hover:scale-[1.1] hover:font-medium transition duration-300 ease-in-out">GQ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="block hover:opacity-60 hover:scale-[1.5]  hover:font-bold transition duration-300 ease-in-out">News</a>
+            <a href="#" class="block hover:opacity-60 hover:scale-[1.5]  hover:font-bold transition duration-300 ease-in-out">Stories</a>
+          </nav>
+
+          <!-- Burger (Mobile Only) -->
+          <button class="burger-menu lg:hidden flex flex-col justify-center items-center gap-2 group">
+            <span class="block w-6 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-5"></span>
+            <span class="block w-6 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-5"></span>
+          </button>
+
+        </div>
+
+        <!-- Right Menu -->
+        <div class="flex justify-end items-center gap-4">
+          <a href="#" class="hover:opacity-60 transition">
+            SIGN IN
+          </a>
+          <a href="#" class="">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3333 7.08333V4.25C11.3333 3.49855 11.0348 2.77788 10.5035 2.24653C9.97212 1.71518 9.25145 1.41667 8.5 1.41667C7.74855 1.41667 7.02788 1.71518 6.49653 2.24653C5.96518 2.77788 5.66667 3.49855 5.66667 4.25V7.08333M2.125 4.95833V12.75C2.125 13.5014 2.42351 14.2221 2.95486 14.7535C3.48622 15.2848 4.20689 15.5833 4.95833 15.5833H12.0417C12.7931 15.5833 13.5138 15.2848 14.0451 14.7535C14.5765 14.2221 14.875 13.5014 14.875 12.75V4.95833H2.125Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Menu Mobile -->
+      <div class="menu-mobile fixed inset-0 bg-white hidden flex flex-col items-center justify-between pt-16 max-h-screen overflow-y-auto z-0">
+        <nav class="flex flex-col text-xl w-full text-center">
+          <a href="#" class="menu-link text-[13px] block py-[10px]">Women</a>
+          <a href="#" class="menu-link text-[13px] block py-[10px]">Collections</a>
+          <div class="submenu-mobile w-full">
+            <button class="submenu-toggle w-full text-center text-[13px] px-4 py-[10px] uppercase">Editorial</button>
+            <div class="submenu-dropdown hidden flex flex-col">
+              <a href="#" class="px-6 py-[10px] text-[13px]">A.S.C</a>
+              <a href="#" class="px-6 py-[10px] text-[13px]">bazaar</a>
+              <a href="#" class="px-6 py-[10px] text-[13px]">ELLE</a>
+              <a href="#" class="px-6 py-[10px] text-[13px]">GQ</a>
+            </div>
+          </div>
+          <a href="#" class="menu-link text-[13px] block py-[10px]">News</a>
+          <a href="#" class="menu-link text-[13px] block py-[10px]">Stories</a>
+        </nav>
+        <div class="mb-5">
+          <!-- logo at bottom -->
+          <svg class="logo-mobile w-full h-auto max-w-screen pt-5 px-3" width="1402" height="145" viewBox="0 0 1402 145" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1360.37 101.887C1360.37 98.6645 1358.96 96.0867 1356.12 94.1533C1353.29 92.0911 1348.65 90.6089 1342.2 89.7067L1317.45 86.0333C1298.38 83.0689 1284.46 78.1067 1275.69 71.1467C1267.06 64.1867 1262.74 54.6489 1262.74 42.5333C1262.74 29.1289 1268.8 18.6889 1280.91 11.2133C1293.16 3.73778 1309.98 0 1331.37 0C1370.94 0 1393.11 13.8556 1397.88 41.5667L1358.25 45.4333C1356.19 39.7622 1352.96 35.7022 1348.58 33.2533C1344.2 30.6756 1338.01 29.3867 1330.02 29.3867C1321.51 29.3867 1314.94 30.4178 1310.3 32.48C1305.79 34.5422 1303.53 37.5067 1303.53 41.3733C1303.53 44.5956 1304.76 47.0444 1307.21 48.72C1309.66 50.3956 1314.17 51.7489 1320.74 52.78L1350.9 57.6133C1368.82 60.4489 1381.77 65.2822 1389.76 72.1133C1397.75 78.8156 1401.75 88.2889 1401.75 100.533C1401.75 115.227 1395.82 126.311 1383.96 133.787C1372.1 141.262 1354.64 145 1331.57 145C1286.2 145 1262.03 128.889 1259.07 96.6667H1300.05C1302.5 109.298 1313.07 115.613 1331.76 115.613C1350.84 115.613 1360.37 111.038 1360.37 101.887Z" fill="black"/>
+            <path d="M1125.74 141.52H1083.4L1143.34 3.48013H1192.06L1251.99 141.52H1208.68L1198.44 116.387H1135.41L1125.74 141.52ZM1167.12 34.9935L1147.4 85.4535H1186.84L1167.12 34.9935Z" fill="black"/>
+            <path d="M920.223 3.48013H957.343L1026.36 86.4201V3.48013H1065.8V141.52H1028.68L959.663 58.5801V141.52H920.223V3.48013Z" fill="black"/>
+            <path d="M776.46 141.52H734.12L794.053 3.48013H842.773L902.707 141.52H859.4L849.153 116.387H786.127L776.46 141.52ZM817.833 34.9935L798.113 85.4535H837.553L817.833 34.9935Z" fill="black"/>
+            <path d="M539.975 3.48013H587.148L628.715 96.8601L670.088 3.48013H716.295V141.52H678.015V61.0935L643.021 141.52H612.475L577.675 61.4801V141.52H539.975V3.48013Z" fill="black"/>
+            <path d="M466.908 3.48013H508.668V141.52H466.908V3.48013Z" fill="black"/>
+            <path d="M323.145 141.52H280.805L340.739 3.48013H389.459L449.392 141.52H406.085L395.839 116.387H332.812L323.145 141.52ZM364.519 34.9935L344.799 85.4535H384.239L364.519 34.9935Z" fill="black"/>
+            <path d="M154.063 3.48013H195.823V107.687H274.316L270.063 141.52H154.063V3.48013Z" fill="black"/>
+            <path d="M0 3.48013H68.6333C110.007 3.48013 130.693 19.3979 130.693 51.2335C130.693 67.6024 125.344 79.7179 114.647 87.5801C104.078 95.3135 87.9667 99.1801 66.3133 99.1801H40.4067V141.52H0V3.48013ZM90.0933 51.0401C90.0933 45.1113 88.16 40.8579 84.2933 38.2801C80.4267 35.7024 74.3044 34.4135 65.9267 34.4135H40.4067V68.2468H65.54C73.9178 68.2468 80.1044 66.9579 84.1 64.3801C88.0956 61.8024 90.0933 57.3557 90.0933 51.0401Z" fill="black"/>
+          </svg>
+        </div>
+      </div>
+  </header>
+
+  <!-- Logo -->
+  <span>
+    <svg class="logo mix-blend-difference w-full h-auto max-w-screen fixed pt-5 px-3 z-10" width="1402" height="145" viewBox="0 0 1402 145" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1360.37 101.887C1360.37 98.6645 1358.96 96.0867 1356.12 94.1533C1353.29 92.0911 1348.65 90.6089 1342.2 89.7067L1317.45 86.0333C1298.38 83.0689 1284.46 78.1067 1275.69 71.1467C1267.06 64.1867 1262.74 54.6489 1262.74 42.5333C1262.74 29.1289 1268.8 18.6889 1280.91 11.2133C1293.16 3.73778 1309.98 0 1331.37 0C1370.94 0 1393.11 13.8556 1397.88 41.5667L1358.25 45.4333C1356.19 39.7622 1352.96 35.7022 1348.58 33.2533C1344.2 30.6756 1338.01 29.3867 1330.02 29.3867C1321.51 29.3867 1314.94 30.4178 1310.3 32.48C1305.79 34.5422 1303.53 37.5067 1303.53 41.3733C1303.53 44.5956 1304.76 47.0444 1307.21 48.72C1309.66 50.3956 1314.17 51.7489 1320.74 52.78L1350.9 57.6133C1368.82 60.4489 1381.77 65.2822 1389.76 72.1133C1397.75 78.8156 1401.75 88.2889 1401.75 100.533C1401.75 115.227 1395.82 126.311 1383.96 133.787C1372.1 141.262 1354.64 145 1331.57 145C1286.2 145 1262.03 128.889 1259.07 96.6667H1300.05C1302.5 109.298 1313.07 115.613 1331.76 115.613C1350.84 115.613 1360.37 111.038 1360.37 101.887Z" fill="white"/>
+      <path d="M1125.74 141.52H1083.4L1143.34 3.48013H1192.06L1251.99 141.52H1208.68L1198.44 116.387H1135.41L1125.74 141.52ZM1167.12 34.9935L1147.4 85.4535H1186.84L1167.12 34.9935Z" fill="white"/>
+      <path d="M920.223 3.48013H957.343L1026.36 86.4201V3.48013H1065.8V141.52H1028.68L959.663 58.5801V141.52H920.223V3.48013Z" fill="white"/>
+      <path d="M776.46 141.52H734.12L794.053 3.48013H842.773L902.707 141.52H859.4L849.153 116.387H786.127L776.46 141.52ZM817.833 34.9935L798.113 85.4535H837.553L817.833 34.9935Z" fill="white"/>
+      <path d="M539.975 3.48013H587.148L628.715 96.8601L670.088 3.48013H716.295V141.52H678.015V61.0935L643.021 141.52H612.475L577.675 61.4801V141.52H539.975V3.48013Z" fill="white"/>
+      <path d="M466.908 3.48013H508.668V141.52H466.908V3.48013Z" fill="white"/>
+      <path d="M323.145 141.52H280.805L340.739 3.48013H389.459L449.392 141.52H406.085L395.839 116.387H332.812L323.145 141.52ZM364.519 34.9935L344.799 85.4535H384.239L364.519 34.9935Z" fill="white"/>
+      <path d="M154.063 3.48013H195.823V107.687H274.316L270.063 141.52H154.063V3.48013Z" fill="white"/>
+      <path d="M0 3.48013H68.6333C110.007 3.48013 130.693 19.3979 130.693 51.2335C130.693 67.6024 125.344 79.7179 114.647 87.5801C104.078 95.3135 87.9667 99.1801 66.3133 99.1801H40.4067V141.52H0V3.48013ZM90.0933 51.0401C90.0933 45.1113 88.16 40.8579 84.2933 38.2801C80.4267 35.7024 74.3044 34.4135 65.9267 34.4135H40.4067V68.2468H65.54C73.9178 68.2468 80.1044 66.9579 84.1 64.3801C88.0956 61.8024 90.0933 57.3557 90.0933 51.0401Z" fill="white"/>
+    </svg>
+  </span>
+
+  <!-- Content -->
+  <main>
+    <div class="">
+      <video class="h-screen w-full object-cover object-center" width="100%" autoplay muted loop>
+        <source src="assets/image/01.mp4" type="video/mp4">
+      </video>
+    </div>
+  </main>
+
+  <section>
+    <div class="container mx-auto px-6 text-center">
+      <!-- New -->
+      <div class="pt-[10vh]" data-aos="fade-up" data-aos-delay="0">
+        <div class="sticky top-0 bottom-0 z-[1] pt-[7rem] md:pt-[20rem]">
+          <p class="text-white uppercase text-[40px] lg:text-[80px] font-black font-hanken">new</p>
+        </div>
+        <div class="relative w-full h-[286px] max-w-[282px] md:w-[566px] md:h-[572px] md:max-w-full mx-auto overflow-hidden mt-[-10.7rem] md:mt-[-21.5rem] z-[-1]">
+          <img src="assets/image/01.jpg" alt="Image 1" class="w-full h-full object-cover object-top">
+        </div>
+      </div>
+      <div class="max-w-[715px] mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <div class="grid grid-cols-1 gap-y-2 mt-3">
+          <p class="font-bold">Sed egestas, nibh a condimentum imperdiet</p>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+          </p>
+        </div>
+      </div>
+
+      <!-- Bestseller -->
+      <div class="pt-[10vh]" data-aos="fade-up" data-aos-delay="0">
+        <div class="sticky top-0 bottom-0 pt-[10vh] md:pt-[16vh] lg:pt-[38vh]">
+          <p class="text-white uppercase text-[40px] lg:text-[80px] font-black font-hanken">bestseller</p>
+        </div>
+        <div class="relative w-full h-[50vw] mt-[-19vh] md:mt-[-22vh] lg:mt-[-50.5vh] z-[-1]">
+          <video class="w-full h-full object-cover object-center" width="100%" autoplay muted loop>
+            <source src="assets/image/02.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="max-w-[715px] mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <div class="grid grid-cols-1 gap-y-2 mt-3">
+          <p class="font-bold">Sed egestas, nibh a condimentum imperdiet</p>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+          </p>
+        </div>
+      </div>
+
+      <!-- Collection -->
+       <div class="pt-[10vh]">
+        <div class="grid grid-cols-2 gap-[30px] max-w-[978px] mx-auto">
+          <div class="col-span-2 group" data-aos="fade-up" data-aos-delay="0">
+            <div class="relative overflow-hidden">
+              <img src="assets/image/02.jpg" alt="Collection Image" class="w-full h-full object-cover object-center scale-[3] md:scale-[1] translate-y-[70%] md:translate-y-0">
+              <video class="absolute inset-0 h-full w-full object-cover object-center opacity-0 group-hover:opacity-100 transition-opacity duration-500  ease-in-out" width="100%" autoplay muted loop>
+                <source src="assets/image/03.mp4" type="video/mp4">
+              </video>
+              <div class="absolute inset-0 flex items-center justify-center text-white uppercase text-3xl md:text-6xl font-black font-hanken">
+                collection 01
+              </div>
+            </div>
+          </div>
+          <div class="group" data-aos="fade-up" data-aos-delay="0">
+            <div class="relative max-h-[161px] md:max-h-[30vh] lg:max-h-[455px] overflow-hidden">
+              <img src="assets/image/03.jpg" alt="Collection Image" class="w-full h-full object-cover object-center scale-[2.6] translate-y-[42%] md:scale-[1] md:translate-y-0">
+              <img src="assets/image/05.png" alt="Collection Image Hover" class="absolute inset-0 h-full w-full object-cover object-center opacity-0 group-hover:opacity-100 transition-opacity duration-500  ease-in-out">
+              <div class="absolute inset-0 flex items-center justify-center text-white uppercase text-lg md:text-[40px] font-black font-hanken">
+                collection 02
+              </div>
+            </div>
+          </div>
+          <div class="group" data-aos="fade-up" data-aos-delay="0">
+            <div class="relative max-h-[161px] md:max-h-[30vh] lg:max-h-[455px] overflow-hidden">
+              <img src="assets/image/04.jpg" alt="Collection Image" class="w-full h-full object-cover object-center scale-[2.8] translate-y-[55%] md:scale-[1] md:translate-y-0">
+              <img src="assets/image/05.png" alt="Collection Image Hover" class="absolute inset-0 h-full w-full object-cover object-center opacity-0 group-hover:opacity-100 transition-opacity duration-500  ease-in-out">
+              <div class="absolute inset-0 flex items-center justify-center text-white uppercase text-lg md:text-[40px] font-black font-hanken">
+                collection 03
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="pt-[10vh]">
+      <div class="marquee bg-black flex gap-4 overflow-hidden">
+        <div class="marquee-text flex items-center uppercase text-white text-2xl md:text-6xl font-black font-white font-hanken gap-4" data-aos="fade-up" data-aos-delay="0">
+          <span>new arrival</span>
+          <span>
+            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M70.8334 38.9583V46.0416H28.3334V53.1249H21.2501V46.0416H14.1667V38.9583H21.2501V31.8749H28.3334V38.9583H70.8334ZM35.4167 24.7916H28.3334V31.8749H35.4167V24.7916ZM35.4167 24.7916H42.5001V17.7083H35.4167V24.7916ZM35.4167 60.2083H28.3334V53.1249H35.4167V60.2083ZM35.4167 60.2083H42.5001V67.2916H35.4167V60.2083Z" fill="white"/>
+            </svg>
+          </span>
+          <span>best selling</span>
+          <span>
+            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.1667 38.9583V46.0416H56.6667V53.1249H63.75V46.0416H70.8334V38.9583H63.75V31.8749H56.6667V38.9583H14.1667ZM49.5834 24.7916H56.6667V31.8749H49.5834V24.7916ZM49.5834 24.7916H42.5V17.7083H49.5834V24.7916ZM49.5834 60.2083H56.6667V53.1249H49.5834V60.2083ZM49.5834 60.2083H42.5V67.2916H49.5834V60.2083Z" fill="white"/>
+            </svg>
+          </span>
+          <span>new arrival</span>
+          <span>
+            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M70.8334 38.9583V46.0416H28.3334V53.1249H21.2501V46.0416H14.1667V38.9583H21.2501V31.8749H28.3334V38.9583H70.8334ZM35.4167 24.7916H28.3334V31.8749H35.4167V24.7916ZM35.4167 24.7916H42.5001V17.7083H35.4167V24.7916ZM35.4167 60.2083H28.3334V53.1249H35.4167V60.2083ZM35.4167 60.2083H42.5001V67.2916H35.4167V60.2083Z" fill="white"/>
+            </svg>
+          </span>
+          <span>best selling</span>
+          <span>
+            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.1667 38.9583V46.0416H56.6667V53.1249H63.75V46.0416H70.8334V38.9583H63.75V31.8749H56.6667V38.9583H14.1667ZM49.5834 24.7916H56.6667V31.8749H49.5834V24.7916ZM49.5834 24.7916H42.5V17.7083H49.5834V24.7916ZM49.5834 60.2083H56.6667V53.1249H49.5834V60.2083ZM49.5834 60.2083H42.5V67.2916H49.5834V60.2083Z" fill="white"/>
+            </svg>
+          </span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-text flex items-center uppercase text-white text-2xl md:text-6xl font-white font-hanken gap-4" aria-hidden="true">
+          <span>new arrival</span>
+          <span>
+            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M70.8334 38.9583V46.0416H28.3334V53.1249H21.2501V46.0416H14.1667V38.9583H21.2501V31.8749H28.3334V38.9583H70.8334ZM35.4167 24.7916H28.3334V31.8749H35.4167V24.7916ZM35.4167 24.7916H42.5001V17.7083H35.4167V24.7916ZM35.4167 60.2083H28.3334V53.1249H35.4167V60.2083ZM35.4167 60.2083H42.5001V67.2916H35.4167V60.2083Z" fill="white"/>
+            </svg>
+          </span>
+          <span>best selling</span>
+          <span>
+            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.1667 38.9583V46.0416H56.6667V53.1249H63.75V46.0416H70.8334V38.9583H63.75V31.8749H56.6667V38.9583H14.1667ZM49.5834 24.7916H56.6667V31.8749H49.5834V24.7916ZM49.5834 24.7916H42.5V17.7083H49.5834V24.7916ZM49.5834 60.2083H56.6667V53.1249H49.5834V60.2083ZM49.5834 60.2083H42.5V67.2916H49.5834V60.2083Z" fill="white"/>
+            </svg>
+          </span>
+          <span>new arrival</span>
+          <span>
+            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M70.8334 38.9583V46.0416H28.3334V53.1249H21.2501V46.0416H14.1667V38.9583H21.2501V31.8749H28.3334V38.9583H70.8334ZM35.4167 24.7916H28.3334V31.8749H35.4167V24.7916ZM35.4167 24.7916H42.5001V17.7083H35.4167V24.7916ZM35.4167 60.2083H28.3334V53.1249H35.4167V60.2083ZM35.4167 60.2083H42.5001V67.2916H35.4167V60.2083Z" fill="white"/>
+            </svg>
+          </span>
+          <span>best selling</span>
+          <span>
+            <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.1667 38.9583V46.0416H56.6667V53.1249H63.75V46.0416H70.8334V38.9583H63.75V31.8749H56.6667V38.9583H14.1667ZM49.5834 24.7916H56.6667V31.8749H49.5834V24.7916ZM49.5834 24.7916H42.5V17.7083H49.5834V24.7916ZM49.5834 60.2083H56.6667V53.1249H49.5834V60.2083ZM49.5834 60.2083H42.5V67.2916H49.5834V60.2083Z" fill="white"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-[10vh]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-8 font-hanken">
+        <div class="max-w-[286px]" data-aos="fade-up" data-aos-delay="100">
+          <p class="font-bold uppercase">Worldwide shipping</p>
+          <p class="text-sm text-black/60 mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+          </p>
+        </div>
+        <div class="max-w-[286px]" data-aos="fade-up" data-aos-delay="100">
+          <p class="font-bold uppercase">customer service</p>
+          <p class="text-sm text-black/60 mt-2">
+            <u>Lorem ipsum dolor sit amet</u>, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+          </p>
+        </div>
+        <div class="max-w-[286px]" data-aos="fade-up" data-aos-delay="100">
+          <p class="font-bold uppercase">secure payment</p>
+          <p class="text-sm text-black/60 mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black text-white py-[10vh]">
+    <div class="container mx-auto px-6" data-aos="fade-up" data-aos-delay="0">
+      <div class="text-center">
+        <p class="text-[40px] font-black font-hanken uppercase">FREQUENTLY ASKED QUESTIONS</p>
+        <p class="text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tab-container mt-10">
+        <div class="tabs style-01 text-[13px]">
+          <button class="tab uppercase active" data-tab="content_1">Orders</button>
+          <button class="tab uppercase" data-tab="content_2">Shipping</button>
+          <button class="tab uppercase" data-tab="content_3">Returns & Exchanges</button>
+          <button class="tab uppercase" data-tab="content_4">Sizing & Products</button>
+        </div>
+        <div class="body pt-[10vh]">
+          <!-- Orders -->
+          <div class="tab-content active" data-tab="content_1">
+            <div class="accordion border-b border-white/20 py-4 cursor-pointer">
+              <div class="header text-white uppercase cursor-pointer py-2">
+                <div class="grid grid-cols-[1fr_20px]">
+                  <div class="text font-bold">How do I track my order?</div>
+                  <div class="toggle-icon h-6 w-6 flex items-center justify-center">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.678223 0.734863L7.17822 6.73486L13.6782 0.734863" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="body py-2">
+                <p class="text-sm text-white/60">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Shipping -->
+          <div class="tab-content" data-tab="content_2">
+            <div class="accordion border-b border-white/20 py-4 cursor-pointer">
+              <div class="header text-white uppercase cursor-pointer py-2">
+                <div class="grid grid-cols-[1fr_20px]">
+                  <div class="text font-bold">Do you offer international shipping?</div>
+                  <div class="toggle-icon h-6 w-6 flex items-center justify-center">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.678223 0.734863L7.17822 6.73486L13.6782 0.734863" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="body py-2">
+                <p class="text-sm text-white/60">
+                  Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+                </p>
+              </div>
+            </div>
+            <div class="accordion border-b border-white/20 py-4 cursor-pointer">
+              <div class="header text-white uppercase cursor-pointer py-2">
+                <div class="grid grid-cols-[1fr_20px]">
+                  <div class="text font-bold">How long does delivery take?</div>
+                  <div class="toggle-icon h-6 w-6 flex items-center justify-center">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.678223 0.734863L7.17822 6.73486L13.6782 0.734863" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="body py-2">
+                <p class="text-sm text-white/60">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+                </p>
+              </div>
+            </div>
+            <div class="accordion border-b border-white/20 py-4 cursor-pointer">
+              <div class="header text-white uppercase cursor-pointer py-2">
+                <div class="grid grid-cols-[1fr_20px]">
+                  <div class="text font-bold">How can I track my order?</div>
+                  <div class="toggle-icon h-6 w-6 flex items-center justify-center">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.678223 0.734863L7.17822 6.73486L13.6782 0.734863" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="body py-2">
+                <p class="text-sm text-white/60">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Returns & Exchanges -->
+          <div class="tab-content" data-tab="content_3">
+            <div class="accordion border-b border-white/20 py-4 cursor-pointer">
+              <div class="header text-white uppercase cursor-pointer py-2">
+                <div class="grid grid-cols-[1fr_20px]">
+                  <div class="text font-bold">What is your return policy?</div>
+                  <div class="toggle-icon h-6 w-6 flex items-center justify-center">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.678223 0.734863L7.17822 6.73486L13.6782 0.734863" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="body py-2">
+                <p class="text-sm text-white/60">
+                  Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+                </p>
+              </div>
+            </div>
+            <div class="accordion border-b border-white/20 py-4 cursor-pointer">
+              <div class="header text-white uppercase cursor-pointer py-2">
+                <div class="grid grid-cols-[1fr_20px]">
+                  <div class="text font-bold">Can I exchange for a different size?</div>
+                  <div class="toggle-icon h-6 w-6 flex items-center justify-center">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.678223 0.734863L7.17822 6.73486L13.6782 0.734863" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="body py-2">
+                <p class="text-sm text-white/60">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+                </p>
+              </div>
+            </div>
+            <div class="accordion border-b border-white/20 py-4 cursor-pointer">
+              <div class="header text-white uppercase cursor-pointer py-2">
+                <div class="grid grid-cols-[1fr_20px]">
+                  <div class="text font-bold">Are sale items refundable?</div>
+                  <div class="toggle-icon h-6 w-6 flex items-center justify-center">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.678223 0.734863L7.17822 6.73486L13.6782 0.734863" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="body py-2">
+                <p class="text-sm text-white/60">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Sizing & Products -->
+          <div class="tab-content" data-tab="content_4">
+            <div class="accordion border-b border-white/20 py-4 cursor-pointer">
+              <div class="header text-white uppercase cursor-pointer py-2">
+                <div class="grid grid-cols-[1fr_20px]">
+                  <div class="text font-bold">How do I determine my size?</div>
+                  <div class="toggle-icon h-6 w-6 flex items-center justify-center">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.678223 0.734863L7.17822 6.73486L13.6782 0.734863" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="body py-2">
+                <p class="text-sm text-white/60">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mx-auto px-4 py-[10vh]">
+      <!-- Form -->
+      <div class="grid grid-cols-1 md:grid-cols-[40%_1fr] gap-y-[10vh]" data-aos="fade-up" data-aos-delay="0">
+        <div class="max-w-[375px]">
+          <p class="font-hanken font-black text-[40px] uppercase">Make an inquiry</p>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.
+          </p>
+        </div>
+        <div>
+          <form action="">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-10 text-sm">
+              <div class="md:col-span-2 form-control flex flex-wrap gap-4">
+                <label class="cursor-pointer label-radio flex items-center gap-2">
+                  <input type="radio" name="radio" class="radio" required>
+                  <span class="label-text text-sm">Onsite</span>
+                </label>
+                <label class="cursor-pointer label-radio flex items-center gap-2">
+                  <input type="radio" name="radio" class="radio" required>
+                  <span class="label-text text-sm">Hybrid</span>
+                </label>
+              </div>
+              <div class="form-input">
+                <input type="text"name="fname" class="input w-full" placeholder="Full name*" required>
+                <label for="fname" class="label-input text-black/30">Full name*</label>
+              </div>
+              <div class="form-input">
+                <input type="email" name="email" class="input w-full" placeholder="Email*" required>
+                <label for="email" class="label-input text-black/30">Email*</label>
+              </div>
+              <div class="form-input">
+                <input type="text" name="phone" class="input w-full" placeholder="Phone Number*" required>
+                <label for="phone" class="label-input text-black/30">Phone Number*</label>
+              </div>
+              <div class="form-input">
+                <select name="subject" class="select style-02 w-full">
+                  <option value="" disabled selected>Select Subject*</option>
+                  <option value="1">Subject 1</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-control mt-4">
+              <label class="cursor-pointer label-checkbox flex items-center gap-2">
+                <input type="checkbox" name="checkbox" class="checkbox" required>
+                <span class="label-text text-sm text-black/50">I agree to all terms & conditions</span>
+              </label>
+            </div>
+            <button type="submit" class="flex min-w-[140px] min-h-[52px] p-2 items-center justify-center bg-black text-white mt-10">
+              SEND
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <button class="back-to-top ml-2 p-[10px] uppercase hover:text-black/50 transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="0">Homepage</button>
+    <div class="grid grid-cols-1 gap-10 px-6 lg:px-16 py-10 bg-[#F8F9F8]">
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4" data-aos="fade-up" data-aos-delay="100">
+        <div>
+          <p class="text-[13px] uppercase pb-8">ABOUT</p>
+          <ul class="list-none flex flex-col gap-4 opacity-60">
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Women</a></li>
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Collections</a></li>
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Editorial</a></li>
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Stories</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[13px] uppercase pb-8">help</p>
+          <ul class="list-none flex flex-col gap-4 opacity-60">
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Payment Notification</a></li>
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Customer Service</a></li>
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[13px] uppercase pb-8">social</p>
+          <ul class="list-none flex flex-col gap-4 opacity-60">
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Instagram</a></li>
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Facebook</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[13px] uppercase pb-8">legal</p>
+          <ul class="list-none flex flex-col gap-4 opacity-60">
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Terms & Conditions</a></li>
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Privacy Policy</a></li>
+            <li><a href="#" class="text-xs hover:text-black/50 transition-all duration-300 ease-in-out">Cookies Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-span-2">
+          <p class="text-[13px] uppercase pb-7">newsletter</p>
+          <form action="">
+            <div>
+              <input type="email" name="email" class="input px-0 w-full text-xs bg-transparent" placeholder="Email">
+              <button type="submit" class="flex w-full h-[34px] p-2 items-center justify-center bg-[#E0E0E0] text-black uppercase mt-6 text-xs">
+                SUBSCRIBE
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-between gap-4 text-xs">
+        <p>©PLAIMANAS</p>
+        <p>Web by ::*</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
